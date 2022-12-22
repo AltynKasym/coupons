@@ -1,0 +1,73 @@
+.detail-product {
+  font-size: var(--fs-4);
+  font-style: normal;
+  line-height: 150%;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 59% 41%;
+    align-self: start;
+    gap: 30px;
+  }
+  &__coupons {
+    margin-top: 24px;
+    &-title {
+      font-weight: 700;
+      font-size: var(--fs-1);
+      line-height: 29px;
+      color: var(--dark-color);
+      margin-bottom: 12px;
+    }
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__map {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+    margin: 16px 0;
+    grid-auto-flow: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  & iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    outline: none;
+  }
+}
+
+.detailProduct .relatedProducts {
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .detail-product {
+    &__inner {
+      grid-template-columns: 100%;
+    }
+    &__map {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2, 400px);
+      gap: 20px;
+      margin: 16px 0;
+      // grid-auto-flow: column;
+      // flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .detail-product {
+    &__map {
+      grid-template-rows: repeat(2, 300px);
+    }
+  }
+}

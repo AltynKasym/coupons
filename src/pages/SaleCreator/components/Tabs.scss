@@ -1,0 +1,20 @@
+.tabs {
+    background: var(--bg-dark-gray);
+    width: fit-content;
+    border-radius: 7px;
+    margin: 24px 0;
+  
+    &-item {
+      width: 136px;
+      height: 33px;
+      font-weight: 600;
+      font-size: var(--fs-5);
+      color: var(--purple-color);
+      margin: 8px;
+      border-radius: 7px;
+    }
+  
+    .active {
+      background: var(--white-color);
+    }
+  }

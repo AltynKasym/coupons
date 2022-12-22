@@ -1,0 +1,38 @@
+.product-period {
+  &-title {
+    position: relative;
+    font-weight: 400;
+    font-size: var(--fs-4);
+    line-height: 150%;
+    padding-left: 35px;
+    margin-bottom: 17px;
+    color: var(--gray-color);
+
+    &:nth-child(1) {
+      margin: 0px 0 4px;
+      padding: 0;
+    }
+
+    &:nth-child(3)::before {
+      position: absolute;
+      left: 0;
+      content: url(../../../../assets/images/detail-product/coupon.svg);
+    }
+
+    &:nth-child(4)::before {
+      position: absolute;
+      left: 0;
+      content: url(../../../../assets/images/detail-product/clock.svg);
+    }
+  }
+  &__date {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 24px;
+
+    &-start {
+      padding: 0 10px 0 5px;
+    }
+  }
+}

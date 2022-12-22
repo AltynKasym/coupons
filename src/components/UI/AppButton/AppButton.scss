@@ -1,0 +1,18 @@
+.app-button{
+    width: 100%;
+
+    & button{
+        width: 100%;
+        padding: 12px 0;
+        background: var(--purple-color);
+        border: 1px solid var(--purple-color);
+        border-radius: 12px;
+        font-size: var(--fs-5);
+        color: var(--white-color)
+    }
+
+    & button:disabled{
+        background: transparent;
+        color: var(--purple-color);
+    }
+}

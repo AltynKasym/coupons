@@ -1,0 +1,62 @@
+.modal-info-content {
+  &__text {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 24px;
+  }
+
+  &__sale {
+    display: flex;
+
+    &-index {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      background-color: #e31b4b;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 24px;
+      color: var(--white-color);
+    }
+
+    &-expiration {
+      margin-left: 20px;
+    }
+
+    &-title {
+      font-size: 15px;
+      line-height: 150%;
+      color: #98949e;
+    }
+
+    &-date-wrapper {
+      margin-top: 4px;
+      display: flex;
+      gap: 15px;
+    }
+
+    &-date {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__stats {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    &-item {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    &-title {
+      line-height: 150%;
+      color: #98949e;
+    }
+  }
+}

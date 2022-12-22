@@ -1,0 +1,37 @@
+.addresses {
+  height: 400px;
+  overflow-y: scroll;
+  font-size: var(--fs-5);
+  color: var(--dark-color);
+  padding-right: 17px;
+  &__item {
+    padding: 10px;
+    border-bottom: 1px solid #edf1fd;
+    cursor: pointer;
+
+    &-address {
+      margin: 5px 0 10px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--bg-dark-gray);
+
+    &-thumb {
+      background: var(--second-purple-color);
+      border-radius: 16px;
+
+      &:hover {
+        background: var(--bg-purple);
+      }
+    }
+  }
+
+  &__item {
+    &-accent {
+      background-color: #edf1fd;
+      font-weight: 600;
+    }
+  }
+}

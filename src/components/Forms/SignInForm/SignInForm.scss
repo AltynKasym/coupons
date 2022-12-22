@@ -1,0 +1,41 @@
+.sign-in{
+    &__form{
+        &-body{
+            text-align: center;
+        }
+
+        & .sign-in__form--warn-text{
+            display: none;
+        }
+
+        &--warn{
+            & .phone-input{
+                border: 1px solid var(--red-color);
+                margin-bottom: 2px;
+                
+                &::after{
+                    content: 'Номер';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform: translateY(-115%);
+                    color: var(--red-color);
+                    font-size: var(--fs-6);
+                }
+            }
+            
+            & .sign-in__form--warn-text{
+                display: block !important;
+                float: left;
+                color: var(--red-color);
+                font-size: var(--fs-6);
+                margin-bottom: 24px;
+            }
+
+            & .form-input__err{
+                transform: translateY(210%);
+            }
+
+        }
+    }
+}

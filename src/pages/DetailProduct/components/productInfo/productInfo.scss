@@ -1,0 +1,133 @@
+.product-info {
+  // width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 5px;
+  &-company {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 72px;
+      height: 72px;
+    }
+    // margin-bottom: 30px;
+    &__name {
+      padding-left: 16px;
+      font-weight: 700;
+      font-size: var(--fs-2);
+      line-height: 24px;
+    }
+  }
+  &-discount {
+    color: var(--gray-color);
+    margin-bottom: 6px;
+  }
+  &-description {
+    // margin-bottom: 36px;
+    font-size: var(--fs-3);
+  }
+
+  &-buttons {
+    // margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .button-buy {
+      padding: 18px 95px;
+      font-weight: 400;
+      font-size: 16px;
+      // line-height: 125%;
+      background: var(--purple-color);
+      color: var(--white-color);
+      border-radius: 10px;
+    }
+
+    .button-favorite {
+      display: flex;
+      margin-left: 12px;
+      padding: 18px;
+      background: var(--bg-dark-gray);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .product-info {
+    &-company {
+      img {
+        height: 85%;
+      }
+      &__name {
+        font-size: 18px;
+        line-height: 12px;
+      }
+    }
+    &-description {
+      font-size: var(--fs-6);
+    }
+    &-buttons {
+      .button-buy {
+        padding: 14px 75px;
+        font-size: 15px;
+        // line-height: 25%;
+      }
+
+      .button-favorite {
+        margin-left: 12px;
+        padding: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .product-info {
+    &-company {
+      margin-bottom: 20px;
+
+      &__name {
+        font-size: var(--fs-2);
+        line-height: 12px;
+      }
+    }
+    &-description {
+      width: 80%;
+      margin-bottom: 30px;
+      font-size: var(--fs-3);
+    }
+    &-buttons {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-info {
+    &-description {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .product-info-buttons {
+    display: grid;
+    grid-template-columns: 80% 60px;
+    gap: 5px;
+    .button-buy {
+      padding: 14px 5px;
+      font-size: 15px;
+      // line-height: 25%;
+    }
+
+    .button-favorite {
+      margin-left: 12px;
+      padding: 14px;
+    }
+  }
+}

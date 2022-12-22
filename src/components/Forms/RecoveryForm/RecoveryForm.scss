@@ -1,0 +1,11 @@
+.recovery-password{
+    &__form{
+        &-body{
+            text-align: center;
+        }
+    }
+
+    & .resend-message{
+        margin-top: 24px;
+    }
+}

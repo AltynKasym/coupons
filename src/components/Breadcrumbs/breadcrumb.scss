@@ -1,0 +1,30 @@
+.bread_wrap {
+   padding: 24px 0;
+   height: 71px;
+
+   & a {
+      padding-right: 10px;
+
+      &::after{
+         display: inline-block;
+         content: '/';
+         margin-left: 10px;
+         font-size: var(--fs-4);
+      }
+   }
+
+     a, .current_location {
+      color: var(--second-purple-color);
+      font-size: var(--fs-4);
+      line-height: 23px;
+     }
+}
+
+@media screen and (max-width:375px) {
+    .bread_wrap {
+         a, .current_location {
+            line-height: 20px;
+            font-size: var(--fs-6);
+         }
+    }
+}

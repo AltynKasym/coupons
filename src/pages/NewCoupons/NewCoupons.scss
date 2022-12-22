@@ -1,0 +1,35 @@
+.new-coupons{
+    &__title{
+        font-size: var(--fs-1);
+        color: var(--dark-color);
+        font-weight: 700;        
+    }
+    &__category-list{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    &__category-item{
+        text-align: center;
+        display: inline;
+        padding: 8px 16px;
+        background: var(--bg-dark-gray);
+        border-radius: 12px;
+        cursor: pointer;
+        color: var(--purple-color);
+        font-size: var(--fs-5);
+    }
+    &__category-active-item{
+        text-align: center;
+        display: inline;
+        padding: 8px 16px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: var(--fs-5);
+        color: white;
+        background-color: var(--purple-color);
+    }
+}

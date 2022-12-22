@@ -1,0 +1,10 @@
+.phone-input{
+    flex-direction: row !important;
+
+    & .form-input__err{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(105%);
+    }
+}

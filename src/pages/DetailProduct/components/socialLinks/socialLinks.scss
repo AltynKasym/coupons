@@ -1,0 +1,17 @@
+.social-links {
+  margin-top: 36px;
+
+  &-title {
+    font-size: var(--fs-4);
+    color: #4f70e2;
+    margin-bottom: 8px;
+  }
+
+  &__block {
+    display: flex;
+
+    &-item + &-item {
+      margin-left: 16px;
+    }
+  }
+}

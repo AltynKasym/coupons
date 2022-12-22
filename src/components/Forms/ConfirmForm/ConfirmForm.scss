@@ -1,0 +1,30 @@
+.confirm-form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title{
+        font-size: var(--fs-2);
+        font-weight: 700;
+    }
+
+    &__number{
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+        font-size: var(--fs-2-5);
+    }
+
+    &__number-ask{
+        font-size: var(--fs-5);
+        color: var(--purple-color);
+        cursor: pointer;
+    }
+
+    &__err-mess{
+        float: left;
+        color: var(--red-color);
+        font-size: var(--fs-6);
+        margin-bottom: 24px;
+    }
+}

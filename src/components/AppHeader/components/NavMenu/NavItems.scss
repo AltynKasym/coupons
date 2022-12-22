@@ -1,0 +1,21 @@
+.header-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid #D3D3D3;
+      padding-right: 20px;
+    }
+  }
+}

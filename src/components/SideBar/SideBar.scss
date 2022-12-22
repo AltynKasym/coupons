@@ -1,0 +1,128 @@
+.sideBar {
+    width: 252px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    padding: 24px 16px;
+
+    &__item {
+        font-size: var(--fs-5);
+        line-height: 21px;
+        margin-bottom: 27px;
+        a {
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    .active {
+        color: blue;
+    }
+    .user-not {
+        padding: 30px;
+        text-align: center;
+        & .app-button {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    .mob {
+        display: none;
+
+        a {
+            color: var(--red-color) !important;
+        }
+    }
+
+    &__sign-out {
+        margin-top: 24px;
+        color: var(--red-color);
+        background: none;
+        border: none;
+    }
+
+    & .exit-confirm {
+        padding: 50px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        & > div {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .side {
+        width: 100%;
+    }
+    .sideBar {
+        width: 100%;
+        z-index: 8;
+        padding: 15px;
+
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .mob {
+            display: block;
+        }
+
+        &__img {
+            height: 20px;
+        }
+
+        .desk-logout,
+        .line {
+            display: none;
+        }
+        &__sign-out {
+            margin: 0;
+        }
+
+        &__item {
+            margin: 0;
+            font-size: var(--fs-6);
+            a {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .side {
+        width: 100%;
+    }
+    .sideBar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 8;
+        padding: 15px;
+        border-radius: 0;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+            rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sideBar {
+        & .exit-confirm {
+            padding: 24px;
+        }
+    }
+}

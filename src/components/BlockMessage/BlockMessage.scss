@@ -1,0 +1,37 @@
+.block-message{
+    text-align: center;
+
+    &__body{
+        display: inline-block;
+        padding: 36px;
+        background: var(--white-color);
+        text-align: center;
+    }
+
+    & img{
+        margin-bottom: 18px;
+    }
+
+    &__title{
+        font-size: var(--fs-2);
+        margin-bottom: 32px;
+    }
+
+    &__home-link{
+        display: block;
+        width: var(--form-content-width);
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .block-message{
+        &__body{
+            width: var(--form-content-width);
+            padding: 15px;
+        }
+        &__home-link{
+            width: 100%;
+        }
+    }
+}

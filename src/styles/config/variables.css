@@ -1,0 +1,63 @@
+:root {
+    /* Block Sizes In App */
+    --wrap-container-width: 60.84%;
+    --form-content-width: 316px;
+    --header-height: 150px;
+
+    /* Font Sizes In App  */
+    --fs: 15px;
+    --fs-1: 24px;
+    --fs-2: 20px;
+    --fs-2-5: 18px;
+    --fs-3: 16px;
+    --fs-4: 15px;
+    --fs-5: 14px;
+    --fs-6: 13px;
+
+    /* Colors In App */
+    --black-color: #000;
+    --dark-color: #181818;
+    --cod-gray-color: #171717;
+    --gray-color: #98949e;
+    --purple-color: #4b5fa5;
+    --dark-purple-color: #2c29a5;
+    --second-purple-color: #4f70e2;
+    --white-color: #fff;
+    --red-color: #e31b4b;
+    --kimberly-color: #8c7aa4;
+    --concrete-color: #f2f2f2;
+    --selago-color: #f7f1fe;
+    --bg-arrow-color: #f1eaff;
+    --alabaster-color: #fbfbfb;
+    --alto-color: #d3d3d3;
+    --bg-gray: #f6f6f6;
+    --bg-dark-gray: #edf1fd;
+    --bg-purple: #4b5fa5;
+    --bg-depurple: #A4AAD2;
+}
+
+@media screen and (max-width: 1680px) {
+    :root {
+        --wrap-container-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --wrap-container-width: 90%;
+        /* --fs: 15px; */
+        /* --fs-1: 24px; */
+        /* --fs-2: 20px; */
+        /* --fs-2-5: 18px; */
+        /* --fs-3: 16px; */
+        /* --fs-4: 15px; */
+        --fs-5: 13px;
+        /* --fs-6: 13px; */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+        --form-content-width: 90%;
+    }
+}

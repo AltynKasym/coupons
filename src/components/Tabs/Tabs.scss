@@ -1,0 +1,22 @@
+.tabs {
+    background: var(--bg-dark-gray);
+    width: fit-content;
+    border-radius: 7px;
+
+    &-item {
+        width: 136px;
+        height: 33px;
+        font-weight: 600;
+        font-size: var(--fs-5);
+        color: var(--purple-color);
+        margin: 8px;
+        border-radius: 7px;
+        transition: .2s;
+
+        &--active {
+            background: var(--white-color);
+        }
+    }
+
+    
+}

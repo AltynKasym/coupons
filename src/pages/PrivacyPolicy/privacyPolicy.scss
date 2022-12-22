@@ -1,0 +1,10 @@
+.privacy-policy {
+    width: 100%;
+    padding: 24px;
+    min-height: 564px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+     &__title {
+        margin-bottom: 16px;
+     }
+}

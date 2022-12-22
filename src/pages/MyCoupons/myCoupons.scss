@@ -1,0 +1,53 @@
+.line-my-coupons {
+    margin: 23px 0 18px 0;
+}
+
+.my-coupons__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    & .coupon {
+        width: 32%;
+    }
+}
+
+.my-coupons__not-data {
+    text-align: center;
+    width: 100%;
+    color: var(--dark-color);
+    font-size: var(--fs-2);
+    padding: 110px;
+}
+
+@media screen and (max-width: 992px) {
+    .my-coupons__cards {
+        & .coupon {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .my-coupons__cards {
+        & .coupon {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .my-coupons__cards {
+        & .coupon {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .my-coupons__cards {
+        & .coupon {
+            width: 100%;
+        }
+    }
+}
